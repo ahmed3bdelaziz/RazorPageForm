@@ -1,0 +1,112 @@
+﻿
+@{
+    Layout = "MasterLayout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0; /* Light gray background */
+        }
+
+        form {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px; /* Add rounded corners */
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"], select {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        div {
+            margin-top: 20px;
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    @{
+        string MyName = Request.Form["FormName"];
+        string MyCity = Request.Form["FormCity"];
+        string MyAddress = Request.Form["FormAddress"];
+        var ImgPath = "";
+    }
+
+    <form action="" method="post">
+        <label for="FormName">Name:</label>
+        <input type="text" id="FormName" name="FormName" required>
+        <label for="FormCity">City:</label>
+        <input type="text" id="FormCity" name="FormCity" required>
+        <label for="FormAddress">Address:</label>
+        <input type="text" id="FormAddress" name="FormAddress" required>
+
+        <select name="choice">
+            <option value="1.jpg">Photo 1</option>
+            <option value="2.jpg">Photo 2</option>
+            <option value="3.jpg">Photo 3</option>
+            <option value="4.jpg">Photo 4</option>
+        </select>
+
+        <input type="submit" value="SUBMIT">
+    </form>
+
+    @{
+        if (!Request.Form["choice"].IsEmpty())
+        {
+            ImgPath = "images/" + Request.Form["choice"];
+        }
+    }
+
+    @{ if (!Request.Form["FormName"].IsEmpty() && !Request.Form["FormCity"].IsEmpty() && !Request.Form["FormAddress"].IsEmpty())
+        {
+            <div>
+                <p>
+                    HELLO @MyName , YOU CITY IS @MyCity , YOUR ADDRESS IS @MyAddress
+                </p>
+                <img src=@ImgPath alt="No Photo" />
+            </div>
+        }
+    }
+
+</body>
+</html>

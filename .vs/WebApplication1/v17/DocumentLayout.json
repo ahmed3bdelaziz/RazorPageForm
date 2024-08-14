@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DEPITASKS\\Task5\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AB380CA7-EEAD-4C5E-8DD7-12FEC23A41B6}|WebApplication1.csproj|d:\\depitasks\\task5\\viewpage1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB380CA7-EEAD-4C5E-8DD7-12FEC23A41B6}|WebApplication1.csproj|solutionrelative:viewpage1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB380CA7-EEAD-4C5E-8DD7-12FEC23A41B6}|WebApplication1.csproj|d:\\depitasks\\task5\\masterlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB380CA7-EEAD-4C5E-8DD7-12FEC23A41B6}|WebApplication1.csproj|solutionrelative:masterlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MasterLayout.cshtml",
+              "DocumentMoniker": "D:\\DEPITASKS\\Task5\\MasterLayout.cshtml",
+              "RelativeDocumentMoniker": "MasterLayout.cshtml",
+              "ToolTip": "D:\\DEPITASKS\\Task5\\MasterLayout.cshtml",
+              "RelativeToolTip": "MasterLayout.cshtml",
+              "ViewState": "AQIAAEQAAAAAAAAAAIAxwFUAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-14T15:19:55.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ViewPage1.cshtml",
+              "DocumentMoniker": "D:\\DEPITASKS\\Task5\\ViewPage1.cshtml",
+              "RelativeDocumentMoniker": "ViewPage1.cshtml",
+              "ToolTip": "D:\\DEPITASKS\\Task5\\ViewPage1.cshtml",
+              "RelativeToolTip": "ViewPage1.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-14T12:21:37.245Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
